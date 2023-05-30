@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irtal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar" id="navbar">
+                <div class="logo">
+                 <h1 onclick="redirectToHomePage()" id="logoTitle">Irtal</h1>
+                 <p>A Recruitment Portal</p>
+                </div>
+                <div class="menu" id="menu">
+                    <ul>
+                        <li id="home"><a href="index.html" class="active">Home</a></li>
+                        <li id="about"><a href="#" class="active">About</a></li>
+                        <li id="contactus"><a href="#" class="active">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="choice">
+                <input type="button" value="Recruiter" id="recruiter">
+                <input type="button" value="Jobseeker" id="jobseeker">
+            </div>
+        </section>
+        <section class="box" id="loginSignup">
+        <div class="container">
+            <form action="">
+            <h1 id="loginTitle">Login</h1>
+            <input type="text" placeholder="Fullname" id="nameField"></label>
+            <input type="uname" placeholder="Username/Email">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm your password" id="password">
+            <input type="file" id="fileFormat">
+            <button type="submit" id="loginBtn" onclick="redirectToProfilePage(); return false;">Login</button>
+            <button type="submit" id="signupBtn" onclick="redirectToProfilePage(); return false;">Register</button>
+            <P id="remember" href="#"><input type="checkbox">Remember in this device</P>
+            <p id="signup">Don't have an account?<a href="#">Register yourself</a></p>
+            <p id="login">Already have an account?<a href="#">Login</a></p>
+            </form> 
+          </div>
+        
+        </section>
+    </main>
+   <script src="index.js"></script>
+</body>
+</html>
